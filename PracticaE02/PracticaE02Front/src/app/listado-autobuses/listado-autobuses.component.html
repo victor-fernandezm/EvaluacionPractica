@@ -1,0 +1,5 @@
+<h1>Listado de Autobuses</h1>
+
+<div *ngFor="let bus of autobuses">
+    <span class="busEntry">Bus: {{bus.matricula}}</span> <button [routerLink]="['visitas',bus.matricula]">Ver visitas</button>
+</div>
